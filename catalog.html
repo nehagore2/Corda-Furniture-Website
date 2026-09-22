@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Catalog | Corda</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+
+    <button class="menu-icon" onclick="toggleMenu()" aria-label="Open menu">
+      ☰
+    </button>
+
+    <nav class="top-links">
+      <a href="catalog.html">Catalog</a>
+      <a href="portfolio.html">Portfolio</a>
+    </nav>
+
+    <a href="index.html" class="logo">corda</a>
+
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay" onclick="closeMenu()"></div>
+
+  <aside class="side-menu" id="sideMenu">
+
+    <button class="close-menu" onclick="closeMenu()">×</button>
+
+    <h3>corda</h3>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="story.html">Story</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Add to Cart</a>
+    </nav>
+
+  </aside>
+
+  <main>
+
+    <section class="page-hero">
+
+      <h1>Full Catalog.</h1>
+
+      <p>
+        Discover our collection of handmade furniture,
+        designed for spaces with character.
+      </p>
+
+    </section>
+
+    <section class="page-content">
+
+      <div class="catalog-grid">
+
+        <div class="catalog-card">
+
+          <img src="images/final-furniture.jpg"
+               alt="Wooden chair">
+
+          <h3>Classic Wooden Chair</h3>
+
+          <p>Handcrafted wooden seating.</p>
+
+          <button class="dark-btn"
+                  onclick="addToCart('Classic Wooden Chair', 'images/final-furniture.jpg')">
+            Add to Cart
+          </button>
+
+        </div>
+
+        <div class="catalog-card">
+
+          <img src="images/coffee-table.jpg"
+               alt="Coffee table">
+
+          <h3>Natural Coffee Table</h3>
+
+          <p>A timeless table for your living space.</p>
+
+          <button class="dark-btn"
+                  onclick="addToCart('Natural Coffee Table', 'images/coffee-table.jpg')">
+            Add to Cart
+          </button>
+
+        </div>
+
+        <div class="catalog-card">
+
+          <img src="images/furniture-interior.jpg"
+               alt="Interior furniture">
+
+          <h3>Interior Collection</h3>
+
+          <p>Furniture designed for everyday comfort.</p>
+
+          <button class="dark-btn"
+                  onclick="addToCart('Interior Collection', 'images/furniture-interior.jpg')">
+            Add to Cart
+          </button>
+
+        </div>
+
+        <div class="catalog-card">
+
+          <img src="images/furniture-detail.jpg"
+               alt="Furniture detail">
+
+          <h3>Minimalist Furniture</h3>
+
+          <p>Simple shapes and thoughtful details.</p>
+
+          <button class="dark-btn"
+                  onclick="addToCart('Minimalist Furniture', 'images/furniture-detail.jpg')">
+            Add to Cart
+          </button>
+
+        </div>
+
+        <div class="catalog-card">
+
+          <img src="images/wood-texture.jpg"
+               alt="Wood texture">
+
+          <h3>Natural Wood Collection</h3>
+
+          <p>Materials with a natural character.</p>
+
+          <button class="dark-btn"
+                  onclick="addToCart('Natural Wood Collection', 'images/wood-texture.jpg')">
+            Add to Cart
+          </button>
+
+        </div>
+
+        <div class="catalog-card">
+
+          <img src="images/furniture-making.jpg"
+               alt="Handmade furniture">
+
+          <h3>Handmade Details</h3>
+
+          <p>Crafted with attention to every detail.</p>
+
+          <button class="dark-btn"
+                  onclick="addToCart('Handmade Details', 'images/furniture-making.jpg')">
+            Add to Cart
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Corda Furniture | Handmade with care</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

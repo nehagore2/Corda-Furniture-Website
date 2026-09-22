@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact | Corda</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+
+    <button class="menu-icon" onclick="toggleMenu()" aria-label="Open menu">
+      ☰
+    </button>
+
+    <nav class="top-links">
+      <a href="catalog.html">Catalog</a>
+      <a href="portfolio.html">Portfolio</a>
+    </nav>
+
+    <a href="index.html" class="logo">corda</a>
+
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay" onclick="closeMenu()"></div>
+
+  <aside class="side-menu" id="sideMenu">
+
+    <button class="close-menu" onclick="closeMenu()">×</button>
+
+    <h3>corda</h3>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="story.html">Story</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Add to Cart</a>
+    </nav>
+
+  </aside>
+
+  <main>
+
+    <section class="page-hero">
+
+      <h1>Let's Connect.</h1>
+
+      <p>
+        Have a question about our furniture?
+        We'd love to hear from you.
+      </p>
+
+    </section>
+
+    <section class="page-content">
+
+      <h2>Get in touch.</h2>
+
+      <p>
+        Contact us for furniture inquiries,
+        custom requirements, or general questions.
+      </p>
+
+      <form class="contact-form"
+            onsubmit="event.preventDefault(); alert('Thank you! Your message form is ready for connection.');">
+
+        <input type="text"
+               placeholder="Your Name"
+               required>
+
+        <input type="email"
+               placeholder="Your Email"
+               required>
+
+        <input type="text"
+               placeholder="Subject"
+               required>
+
+        <textarea placeholder="Your Message"
+                  required></textarea>
+
+        <button type="submit" class="dark-btn">
+          Send Message
+        </button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Corda Furniture | Handmade with care</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
