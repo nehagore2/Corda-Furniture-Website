@@ -74,3 +74,30 @@ function removeFromCart(index) {
 }
 
 displayCart();
+
+// ========================================
+// CORDA - SCROLL REVEAL ANIMATIONS
+// ========================================
+
+const revealElements = document.querySelectorAll(
+  '.section, .story-section, .details-section, .about-section'
+);
+
+const revealObserver = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.15
+  }
+);
+
+revealElements.forEach((element) => {
+  element.classList.add('reveal-hidden');
+  revealObserver.observe(element);
+});

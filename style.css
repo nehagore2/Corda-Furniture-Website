@@ -570,3 +570,181 @@ footer {
   }
 
 }
+
+/* ========================================
+   CORDA - ANIMATIONS & TRANSITIONS
+   ======================================== */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* General page reveal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Hero section entrance */
+.hero h1 {
+  animation: slideUp 1s ease-out both;
+}
+
+.hero p {
+  animation: slideUp 1s ease-out 0.2s both;
+}
+
+.hero .btn,
+.hero button {
+  animation: slideUp 1s ease-out 0.4s both;
+}
+
+/* Navigation transition */
+.navbar a,
+nav a {
+  transition:
+    color 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.navbar a:hover,
+nav a:hover {
+  opacity: 0.65;
+}
+
+/* Button transitions */
+button,
+.btn,
+a.btn {
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+button:hover,
+.btn:hover,
+a.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Product card hover */
+.product-card,
+.product-item,
+.card {
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.product-card:hover,
+.product-item:hover,
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Product image zoom */
+.product-card img,
+.product-item img,
+.card img {
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover img,
+.product-item:hover img,
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* Image transitions */
+img {
+  transition: opacity 0.3s ease;
+}
+
+/* Section heading hover transition */
+h1,
+h2,
+h3 {
+  transition: letter-spacing 0.3s ease;
+}
+
+/* Image hover effect */
+.story-section img,
+.details-section img,
+.about-section img {
+  transition:
+    transform 0.6s ease,
+    filter 0.4s ease;
+}
+
+.story-section img:hover,
+.details-section img:hover,
+.about-section img:hover {
+  transform: scale(1.03);
+}
+
+/* Accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Scroll reveal */
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
