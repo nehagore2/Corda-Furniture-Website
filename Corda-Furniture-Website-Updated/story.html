@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Corda Furniture — thoughtful, handmade furniture inspired by natural materials.">
+  <title>Our Story | Corda Furniture</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <button class="menu-icon" onclick="toggleMenu()" aria-label="Open navigation menu">☰</button>
+    <nav class="top-links" aria-label="Quick navigation">
+      <a href="catalog.html">Catalog</a>
+      <a href="portfolio.html">Portfolio</a>
+    </nav>
+    <a href="index.html" class="logo" aria-label="Corda home">corda</a>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay" onclick="closeMenu()"></div>
+
+  <aside class="side-menu" id="sideMenu" aria-label="Main navigation">
+    <button class="close-menu" onclick="closeMenu()" aria-label="Close menu">×</button>
+    <h3>corda</h3>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="story.html">Story</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Add to Cart <span id="menuCartCount"></span></a>
+    </nav>
+  </aside>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">The Corda approach</p>
+        <h1>Our story.</h1>
+        <p>Furniture shaped by natural materials, thoughtful proportions, and the belief that good design should feel quietly personal.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container content-narrow reveal-on-scroll">
+        <p class="eyebrow">A slower way to make</p>
+        <h2>We design for the moments that happen between the big moments.</h2>
+        <p>Corda began with a simple question: what if furniture could be both visually calm and deeply useful? Our approach brings together warm woods, tactile finishes, and forms that support the way people actually live.</p>
+        <p>We pay attention to the details that are easy to overlook — a comfortable edge, a balanced silhouette, a surface that feels good under your hand, and a finish that lets the material speak.</p>
+        <div class="image-frame story-image"><img src="images/furniture-making.jpg" alt="Furniture being made"></div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="container">
+        <blockquote class="reveal-on-scroll">“The most lasting spaces are built from objects that feel honest.”</blockquote>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container intro-grid">
+        <div class="intro-copy reveal-on-scroll">
+          <p class="eyebrow">Our principles</p>
+          <h2>Less noise. More meaning.</h2>
+          <p><strong>Material honesty:</strong> we celebrate grain, texture, and natural variation rather than hiding them.</p>
+          <p><strong>Everyday comfort:</strong> beauty matters, but so do proportion, ease, and function.</p>
+          <p><strong>Long-term character:</strong> we create pieces that can grow with your space and your story.</p>
+        </div>
+        <div class="image-frame intro-image reveal-on-scroll"><img src="images/wood-texture.jpg" alt="Natural wood texture"></div>
+      </div>
+    </section>
+
+    <section class="final-section">
+      <h2>Made slowly. Meant to stay.</h2>
+      <p>Explore our collection and find a piece that belongs in your everyday life.</p>
+      <a class="light-btn" href="catalog.html">View catalog →</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Corda Furniture | Handmade with care</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

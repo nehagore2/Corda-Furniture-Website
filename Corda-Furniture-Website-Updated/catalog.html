@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Corda Furniture — thoughtful, handmade furniture inspired by natural materials.">
+  <title>Catalog | Corda Furniture</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <button class="menu-icon" onclick="toggleMenu()" aria-label="Open navigation menu">☰</button>
+    <nav class="top-links" aria-label="Quick navigation">
+      <a href="catalog.html">Catalog</a>
+      <a href="portfolio.html">Portfolio</a>
+    </nav>
+    <a href="index.html" class="logo" aria-label="Corda home">corda</a>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay" onclick="closeMenu()"></div>
+
+  <aside class="side-menu" id="sideMenu" aria-label="Main navigation">
+    <button class="close-menu" onclick="closeMenu()" aria-label="Close menu">×</button>
+    <h3>corda</h3>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="story.html">Story</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Add to Cart <span id="menuCartCount"></span></a>
+    </nav>
+  </aside>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">The collection</p>
+        <h1>Furniture with feeling.</h1>
+        <p>Explore a considered selection of tables, seating, and detail-led pieces for warm and welcoming spaces.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal-on-scroll">
+          <p class="eyebrow">Shop the forms</p>
+          <h2>Designed to settle naturally into your space.</h2>
+          <p>Add a piece to your cart to create a small collection of your own. Pricing shown is indicative for this front-end assignment.</p>
+        </div>
+
+        <div class="catalog-grid">
+          <article class="catalog-card reveal-on-scroll">
+            <div class="image-frame"><img src="images/coffee-table.jpg" alt="A warm wooden coffee table"></div>
+            <h3>Lowline Coffee Table</h3>
+            <p>A softly shaped table for slow mornings, books, and shared conversations.</p>
+            <div class="catalog-meta"><span>₹18,500</span><button class="add-cart-btn" onclick="addToCart('Lowline Coffee Table', 18500, 'images/coffee-table.jpg')">Add to cart +</button></div>
+          </article>
+
+          <article class="catalog-card reveal-on-scroll">
+            <div class="image-frame"><img src="images/hero-wood-chair.png" alt="A handmade wooden chair"></div>
+            <h3>Arc Wood Chair</h3>
+            <p>A sculptural wooden chair with a comfortable, expressive silhouette.</p>
+            <div class="catalog-meta"><span>₹12,800</span><button class="add-cart-btn" onclick="addToCart('Arc Wood Chair', 12800, 'images/hero-wood-chair.png')">Add to cart +</button></div>
+          </article>
+
+          <article class="catalog-card reveal-on-scroll">
+            <div class="image-frame"><img src="images/final-furniture.jpg" alt="A finished furniture piece"></div>
+            <h3>Everyday Side Table</h3>
+            <p>A compact companion piece for bedside corners, reading nooks, and living rooms.</p>
+            <div class="catalog-meta"><span>₹9,600</span><button class="add-cart-btn" onclick="addToCart('Everyday Side Table', 9600, 'images/final-furniture.jpg')">Add to cart +</button></div>
+          </article>
+
+          <article class="catalog-card reveal-on-scroll">
+            <div class="image-frame"><img src="images/furniture-detail.jpg" alt="Detailed furniture joinery"></div>
+            <h3>Detail Bench</h3>
+            <p>A practical bench that brings texture and understated character to an entryway.</p>
+            <div class="catalog-meta"><span>₹15,200</span><button class="add-cart-btn" onclick="addToCart('Detail Bench', 15200, 'images/furniture-detail.jpg')">Add to cart +</button></div>
+          </article>
+
+          <article class="catalog-card reveal-on-scroll">
+            <div class="image-frame"><img src="images/furniture-interior.jpg" alt="Furniture in a warm interior"></div>
+            <h3>Quiet Lounge Set</h3>
+            <p>A relaxed combination inspired by calm interiors and natural materials.</p>
+            <div class="catalog-meta"><span>₹28,900</span><button class="add-cart-btn" onclick="addToCart('Quiet Lounge Set', 28900, 'images/furniture-interior.jpg')">Add to cart +</button></div>
+          </article>
+
+          <article class="catalog-card reveal-on-scroll">
+            <div class="image-frame"><img src="images/craftsmanship.jpg" alt="Craftsmanship and material detail"></div>
+            <h3>Craft Detail Object</h3>
+            <p>A small statement piece celebrating texture, handwork, and material contrast.</p>
+            <div class="catalog-meta"><span>₹7,400</span><button class="add-cart-btn" onclick="addToCart('Craft Detail Object', 7400, 'images/craftsmanship.jpg')">Add to cart +</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-section">
+      <h2>Choose the pieces that feel like you.</h2>
+      <p>Need a custom size or material? Tell us what you have in mind.</p>
+      <a class="light-btn" href="contact.html">Ask about custom work →</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Corda Furniture | Handmade with care</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

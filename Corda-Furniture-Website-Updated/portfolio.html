@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Corda Furniture — thoughtful, handmade furniture inspired by natural materials.">
+  <title>Portfolio | Corda Furniture</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <button class="menu-icon" onclick="toggleMenu()" aria-label="Open navigation menu">☰</button>
+    <nav class="top-links" aria-label="Quick navigation">
+      <a href="catalog.html">Catalog</a>
+      <a href="portfolio.html">Portfolio</a>
+    </nav>
+    <a href="index.html" class="logo" aria-label="Corda home">corda</a>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay" onclick="closeMenu()"></div>
+
+  <aside class="side-menu" id="sideMenu" aria-label="Main navigation">
+    <button class="close-menu" onclick="closeMenu()" aria-label="Close menu">×</button>
+    <h3>corda</h3>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="story.html">Story</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Add to Cart <span id="menuCartCount"></span></a>
+    </nav>
+  </aside>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Selected work</p>
+        <h1>Portfolio.</h1>
+        <p>A visual collection of furniture ideas, natural textures, material studies, and quiet interior moments.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal-on-scroll">
+          <p class="eyebrow">Design language</p>
+          <h2>Where ideas become furniture.</h2>
+          <p>Each concept starts with a balance of shape, material, comfort, and function. These studies show the atmosphere behind the Corda approach.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card reveal-on-scroll">
+            <img src="images/furniture-interior.jpg" alt="Furniture in a calm interior">
+            <div class="portfolio-caption"><h3>Warm interiors</h3><p>Natural materials and quiet composition.</p></div>
+          </article>
+          <article class="portfolio-card reveal-on-scroll">
+            <img src="images/coffee-table.jpg" alt="Wooden coffee table">
+            <div class="portfolio-caption"><h3>Soft geometry</h3><p>Rounded forms for everyday living.</p></div>
+          </article>
+          <article class="portfolio-card reveal-on-scroll">
+            <img src="images/wood-texture.jpg" alt="Wood texture">
+            <div class="portfolio-caption"><h3>Material studies</h3><p>Grain, warmth, and natural variation.</p></div>
+          </article>
+          <article class="portfolio-card reveal-on-scroll">
+            <img src="images/craftsmanship.jpg" alt="Furniture craftsmanship">
+            <div class="portfolio-caption"><h3>Attention to detail</h3><p>Small decisions that shape the final piece.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section">
+      <div class="container detail-grid">
+        <div class="detail-copy reveal-on-scroll">
+          <p class="eyebrow">From sketch to space</p>
+          <h2>Good design lives in the details.</h2>
+          <p>We look at how an object is used, how it feels in the hand, how it meets the floor, and how it sits alongside the rest of a room. The result is furniture that feels considered without feeling overworked.</p>
+          <a class="light-btn" href="contact.html">Discuss a project →</a>
+        </div>
+        <div class="image-frame reveal-on-scroll"><img src="images/furniture-making.jpg" alt="Furniture making process"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Corda Furniture | Handmade with care</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
